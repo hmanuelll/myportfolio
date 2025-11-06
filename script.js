@@ -323,12 +323,14 @@ document.addEventListener('DOMContentLoaded', function() {
         });
     }
     
+    // MOBILE DROPDOWN FUNCTIONALITY
     const academicDropdowns = document.querySelectorAll('.dropdown');
     
     academicDropdowns.forEach(dropdown => {
         const dropdownLink = dropdown.querySelector('a');
         
         if (dropdownLink) {
+            // Desktop hover functionality
             dropdown.addEventListener('mouseenter', function() {
                 if (window.innerWidth > 768) {
                     academicDropdowns.forEach(otherDropdown => {
@@ -350,6 +352,7 @@ document.addEventListener('DOMContentLoaded', function() {
                 }
             });
             
+            // Mobile click functionality
             dropdownLink.addEventListener('click', function(e) {
                 if (window.innerWidth <= 768) {
                     e.preventDefault();
@@ -367,35 +370,33 @@ document.addEventListener('DOMContentLoaded', function() {
         }
     });
     
-    const dropdownContents = document.querySelectorAll('.dropdown-content');
-    dropdownContents.forEach(content => {
-        content.addEventListener('mouseenter', function() {
-            if (window.innerWidth > 768) {
-                this.closest('.dropdown').classList.add('active');
-            }
-        });
-        
-        content.addEventListener('mouseleave', function() {
-            if (window.innerWidth > 768) {
-                this.closest('.dropdown').classList.remove('active');
-            }
-        });
-    });
-    
+    // Close dropdowns when clicking outside (mobile only)
     document.addEventListener('click', function(e) {
-        if (!e.target.closest('.dropdown')) {
-            academicDropdowns.forEach(dropdown => {
-                dropdown.classList.remove('active');
-            });
+        if (window.innerWidth <= 768) {
+            if (!e.target.closest('.dropdown')) {
+                academicDropdowns.forEach(dropdown => {
+                    dropdown.classList.remove('active');
+                });
+            }
+        } else {
+            // Desktop - close dropdowns when clicking outside
+            if (!e.target.closest('.dropdown')) {
+                academicDropdowns.forEach(dropdown => {
+                    dropdown.classList.remove('active');
+                });
+            }
         }
     });
     
+    // Close dropdowns when a dropdown link is clicked (to navigate)
     const dropdownLinks = document.querySelectorAll('.dropdown-content a');
     dropdownLinks.forEach(link => {
         link.addEventListener('click', function(e) {
-            academicDropdowns.forEach(dropdown => {
-                dropdown.classList.remove('active');
-            });
+            if (window.innerWidth <= 768) {
+                academicDropdowns.forEach(dropdown => {
+                    dropdown.classList.remove('active');
+                });
+            }
         });
     });
     
@@ -417,23 +418,42 @@ document.addEventListener('DOMContentLoaded', function() {
         });
     }
     
+    // MOBILE MENU FUNCTIONALITY
     const menuToggle = document.querySelector('.menu-toggle');
     const overlay = document.querySelector('.overlay');
     
     if (menuToggle && sidebar && overlay) {
         menuToggle.addEventListener('click', function() {
-            sidebar.classList.toggle('active');
-            overlay.classList.toggle('active');
-            menuToggle.textContent = sidebar.classList.contains('active') ? '✕' : '☰';
+            const isActive = sidebar.classList.contains('active');
+            
+            if (isActive) {
+                // Close sidebar
+                sidebar.classList.remove('active');
+                overlay.classList.remove('active');
+                menuToggle.textContent = '☰';
+                // Close any open dropdowns when closing sidebar
+                academicDropdowns.forEach(dropdown => {
+                    dropdown.classList.remove('active');
+                });
+            } else {
+                // Open sidebar
+                sidebar.classList.add('active');
+                overlay.classList.add('active');
+                menuToggle.textContent = '✕';
+            }
         });
         
         overlay.addEventListener('click', function() {
             sidebar.classList.remove('active');
             overlay.classList.remove('active');
             menuToggle.textContent = '☰';
+            // Close any open dropdowns when closing via overlay
+            academicDropdowns.forEach(dropdown => {
+                dropdown.classList.remove('active');
+            });
         });
         
-        const navLinks = document.querySelectorAll('.nav-menu a');
+        const navLinks = document.querySelectorAll('.nav-menu a, .dropdown-content a');
         navLinks.forEach(link => {
             link.addEventListener('click', function() {
                 if (window.innerWidth <= 768) {
