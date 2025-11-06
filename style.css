@@ -379,7 +379,11 @@ body.light-mode .header-dropdown-content a:hover {
     font-size: 1.2rem;
 }
 
-/* Dropdown Menus */
+/* Improved Dropdown Styles */
+.dropdown {
+    position: relative;
+}
+
 .dropdown-content {
     display: none;
     position: static;
