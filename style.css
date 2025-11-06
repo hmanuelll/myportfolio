@@ -1176,6 +1176,12 @@ body.light-mode .remember-me {
     color: #666 !important;
 }
 
+/* FIXED: HachiVerse logo visibility in light mode */
+body.light-mode .logo {
+    color: #006600 !important; /* Darker green for better visibility */
+    text-shadow: 0 0 10px rgba(0, 102, 0, 0.5) !important;
+}
+
 /* Mini Sidebar when collapsed */
 .sidebar.collapsed .logo {
     font-size: 1rem;
