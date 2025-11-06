@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Student Portfolio Home">
+    <title>Home 🏠</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="icon" href="media/favicon.ico" type="image/x-icon">
+</head>
+<body>
+    <aside class="sidebar">
+        <button class="sidebar-toggle" data-tooltip="Hide Sidebar">←</button>
+        <div class="logo">⚡ HachiVerse ⚡</div>
+        
+        <ul class="nav-menu">
+            <li><a href="home.html" class="active">🏠 <span>Home</span></a></li>
+            <li><a href="profile.html">👤 <span>Profile</span></a></li>
+            <li class="dropdown">
+                <a href="#">📊 <span>Academic Results</span></a>
+                <div class="dropdown-content">
+                    <a href="year1.html">Year 1 Results</a>
+                    <a href="year2.html">Year 2 Results</a>
+                    <a href="year3.html">Year 3 Results</a>
+                    <a href="year4.html">Year 4 Results</a>
+                </div>
+            </li>
+            <li><a href="page1.html">🎮 <span>My Hobbies</span></a></li>
+            <li><a href="page2.html">📸 <span>My Shots</span></a></li>
+            <li><a href="about.html">ℹ️ <span>About Us</span></a></li>
+        </ul>
+    </aside>
+
+    <button class="show-sidebar-btn">☰</button>
+
+    <div class="header-settings">
+        <button class="settings-btn">⚙️</button>
+        <div class="settings-dropdown">
+            <a href="#" id="lightModeToggle">☀️ Light Mode</a>
+            <a href="#" id="logoutBtn">🚪 Logout</a>
+        </div>
+    </div>
+
+    <button class="menu-toggle">☰</button>
+    <div class="overlay"></div>
+
+    <div class="container">
+        <main>
+            <section class="welcome-section">
+                <h1>Welcome To My Digital World!🌐</h1>
+                <p>Current Date & Time: <span id="datetime"></span></p>
+            </section>
+
+            <section class="profile-section">
+                <div class="profile-pic">
+                    <img src="media/Screenshot_20250519-140157.png" alt="Emmanuel's Profile Picture">
+                    <h2>Emmanuel Hachindila</h2>
+                    <p>3rd Year IT Student 🎓</p>
+                </div>
+                <div class="bio">
+                    <h2>About Me ℹ️</h2>
+                    <p>Hello! I'm Emmanuel Hachindila, an Information Technology student currently in my 3rd year at the University of Lusaka (UNILUS). I'm deeply fascinated by the world of tech and how it shapes our daily lives.</p>
+                    <p>When I'm not coding or doing computer stuff, you'll often find me playing video games like FIFA, NBA 2K and Formula 1. I'm also a huge basketball and soccer fan, and I love listening to music from artists like Jay-Z, Kanye West, Playboi Carti and Drake.</p>
+                    <p>My journey in IT has been exciting so far, and I'm constantly learning new skills to become a better developer. This portfolio showcases my academic progress and personal interests – feel free to explore and get to know me better!</p>
+                </div>
+            </section>
+
+            <section class="slideshow-section">
+                <h2>📷!</h2>
+                <div class="slideshow-container">
+                    <div class="slide fade">
+                        <img src="media/nfl.jpg" alt="Gaming Setup" style="object-fit: cover;">
+                    </div>
+                    <div class="slide fade">
+                        <img src="media/Snapchat-1427842671.jpg" alt="eafc" style="object-fit: cover;">
+                    </div>
+                    <div class="slide fade">
+                        <img src="media/dbook1.jpg" alt="Basketball Game" style="object-fit: cover;">
+                    </div>
+                    <div class="slide fade">
+                        <img src="media/jay.jpg" alt="Music Collection" style="object-fit: cover;">
+                    </div>
+                    <div class="slide fade">
+                        <img src="media/ye.jpg" alt="Photography" style="object-fit: cover;">
+                    </div>
+                    
+                    <div class="slideshow-controls">
+                        <button id="prevBtn">❮ Previous</button>
+                        <button id="nextBtn">Next ❯</button>
+                    </div>
+                    
+                    <div class="dots">
+                        <span class="dot"></span>
+                        <span class="dot"></span>
+                        <span class="dot"></span>
+                        <span class="dot"></span>
+                        <span class="dot"></span>
+                    </div>
+                </div>
+            </section>
+
+            <section class="video-section">
+                <h2>Website Tour Video 🎥</h2>
+                <video controls>
+                    <source src="aud&vid/tu2.mp4" type="video/mp4">
+                    Your browser does not support the video tag.
+                </video>
+                <p>Watch this video to learn how to navigate through my website!</p>
+            </section>
+        </main>
+
+        <footer>
+            <p>&copy; 2025 Emmanuel Hachindila - ⚡ HachiVerse ⚡</p>
+        </footer>
+    </div>
+
+    <div class="logout-confirm">
+        <h3>🚪 Logout Confirmation</h3>
+        <p>Are you sure you want to logout?</p>
+        <div class="logout-confirm-buttons">
+            <button class="confirm-btn confirm-yes">Yes, Logout</button>
+            <button class="confirm-btn confirm-no">Cancel</button>
+        </div>
+    </div>
+
+    <div class="error-popup">
+        <span class="error-message"></span>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>

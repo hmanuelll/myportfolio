@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Photography Gallery">
+    <title>My Shots 📸 </title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="icon" href="media/favicon.ico" type="image/x-icon">
+</head>
+<body>
+   
+    <aside class="sidebar">
+        <button class="sidebar-toggle" data-tooltip="Hide Sidebar">←</button>
+        <div class="logo">⚡ HachiVerse ⚡</div>
+        
+        <ul class="nav-menu">
+            <li><a href="home.html">🏠 <span>Home</span></a></li>
+            <li><a href="profile.html">👤 <span>Profile</span></a></li>
+            <li class="dropdown">
+                <a href="#">📊 <span>Academic Results</span></a>
+                <div class="dropdown-content">
+                    <a href="year1.html">Year 1 Results</a>
+                    <a href="year2.html">Year 2 Results</a>
+                    <a href="year3.html">Year 3 Results</a>
+                    <a href="year4.html">Year 4 Results</a>
+                </div>
+            </li>
+            <li><a href="page1.html">🎮 <span>My Hobbies</span></a></li>
+            <li><a href="page2.html" class="active">📸 <span>My Shots</span></a></li>
+            <li><a href="about.html">ℹ️ <span>About Us</span></a></li>
+        </ul>
+    </aside>
+
+    
+    <button class="show-sidebar-btn">☰</button>
+
+    
+    <div class="header-settings">
+        <button class="settings-btn">⚙️</button>
+        <div class="settings-dropdown">
+            <a href="#" id="lightModeToggle">☀️ Light Mode</a>
+            <a href="#" id="logoutBtn">🚪 Logout</a>
+        </div>
+    </div>
+
+   
+    <button class="menu-toggle">☰</button>
+    <div class="overlay"></div>
+
+   
+    <div class="container">
+        <main>
+            <section class="welcome-section">
+                <h1>My Photography Gallery 📷</h1>
+                <p>A collection of my favorite shots captured with passion</p>
+            </section>
+
+            <section class="photography-section">
+                <div class="gallery-intro">
+                    <p>Photography allows me to capture moments and express my creativity. Here are some of my favorite shots that showcase my perspective and technical skills. Each image tells a unique story from my journey.</p>
+                </div>
+
+                <div class="photo-grid">
+                    <div class="photo-item">
+                        <img src="media/PXL_20250123_164233390.jpg" alt="Urban Landscape" style="object-fit: cover; height: 500px;">
+                        <div class="photo-info">
+						    <h3>Nature's Beauty 🌿</h3>
+                            <p>Exploring the wilderness through my lens</p>
+                        </div>
+                    </div>
+                    
+                    <div class="photo-item">
+                        <img src="media/PXL_20250502_174739782.jpg" alt="Nature Shot" style="object-fit: cover; height: 500px;">
+                        <div class="photo-info">
+                           <h3>Urban Dreams 🌃</h3>
+                            <p>Cityscape photography at golden hour</p>
+                        </div>
+                    </div>
+                    
+                    <div class="photo-item">
+                        <img src="media/PXL_20240608_183324646.PORTRAIT.jpg" alt="Portrait" style="object-fit: cover; height: 500px;">
+                        <div class="photo-info">
+                            <h3>Human Expressions 😊</h3>
+                            <p>Capturing art & good colouring</p>
+                        </div>
+                    </div>
+                    
+                    <div class="photo-item">
+                        <img src="media/PXL_20250923_193308281.jpg" alt="Sports Action" style="object-fit: cover; height: 500px;">
+                        <div class="photo-info">
+                            <h3> Another Urban dream🏀</h3>
+                            <p>Great shot of the city</p>
+                        </div>
+                    </div>
+                    
+                    <div class="photo-item">
+                        <img src="media/PXL_20250112_162051433.jpg" alt="Architecture" style="object-fit: cover; height: 500px;">
+                        <div class="photo-info">
+                            <h3>Natural Wonders 🛣️</h3>
+                            <p>Amazing cloud view</p>
+                        </div>
+                    </div>
+                    
+                    <div class="photo-item">
+                        <img src="media/PXL_20241115_160003150.jpg" alt="Street Photography" style="object-fit: cover; height: 500px;">
+                        <div class="photo-info">
+                            <h3>Wholesome picture! 🛣️</h3>
+                            <p>Great angle of the sunset</p>
+                        </div>
+                    </div>
+                </div>
+
+                
+            </section>
+            
+            <a href="page1.html" class="back-btn">← Back to Hobbies</a>
+        </main>
+
+        <footer>
+            <p>&copy; 2025 Emmanuel Hachindila - ⚡ HachiVerse ⚡</p>
+        </footer>
+    </div>
+
+    
+    <div class="logout-confirm">
+        <h3>🚪 Logout Confirmation</h3>
+        <p>Are you sure you want to logout?</p>
+        <div class="logout-confirm-buttons">
+            <button class="confirm-btn confirm-yes">Yes, Logout</button>
+            <button class="confirm-btn confirm-no">Cancel</button>
+        </div>
+    </div>
+
+    
+    <div class="error-popup">
+        <span class="error-message"></span>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>

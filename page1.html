@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="My Hobbies">
+    <title>My Hobbies 🎮</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="icon" href="media/favicon.ico" type="image/x-icon">
+</head>
+<body>
+    
+    <aside class="sidebar">
+        <button class="sidebar-toggle" data-tooltip="Hide Sidebar">←</button>
+        <div class="logo">⚡ HachiVerse ⚡</div>
+        
+        <ul class="nav-menu">
+            <li><a href="home.html">🏠 <span>Home</span></a></li>
+            <li><a href="profile.html">👤 <span>Profile</span></a></li>
+            <li class="dropdown">
+                <a href="#">📊 <span>Academic Results</span></a>
+                <div class="dropdown-content">
+                    <a href="year1.html">Year 1 Results</a>
+                    <a href="year2.html">Year 2 Results</a>
+                    <a href="year3.html">Year 3 Results</a>
+                    <a href="year4.html">Year 4 Results</a>
+                </div>
+            </li>
+            <li><a href="page1.html" class="active">🎮 <span>My Hobbies</span></a></li>
+            <li><a href="page2.html">📸 <span>My Shots</span></a></li>
+            <li><a href="about.html">ℹ️ <span>About Us</span></a></li>
+        </ul>
+    </aside>
+
+    
+    <button class="show-sidebar-btn">☰</button>
+
+    
+    <div class="header-settings">
+        <button class="settings-btn">⚙️</button>
+        <div class="settings-dropdown">
+            <a href="#" id="lightModeToggle">☀️ Light Mode</a>
+            <a href="#" id="logoutBtn">🚪 Logout</a>
+        </div>
+    </div>
+
+   
+    <button class="menu-toggle">☰</button>
+    <div class="overlay"></div>
+
+    
+    <div class="container">
+        <main>
+            <section class="welcome-section">
+                <h1>My Hobbies & Interests 🎯</h1>
+                <p>What I love to do in my free time</p>
+            </section>
+
+            <section class="hobbies-section">
+                <h2><center>Video Games 🎮</h2>
+                <p><center>I'm an avid gamer who enjoys competitive and strategic games. My favorite titles include:</p>
+                
+                <div class="games-grid">
+                    <div class="game-card">
+                        <img src="media/fifa23.jpg" alt="FIFA">
+                        <h3>FIFA ⚽</h3>
+                        <p>Football simulation game</p>
+                    </div>
+                    <div class="game-card">
+                        <img src="media/nba2k.jpg" alt="NBA 2K">
+                        <h3>NBA 2K 🏀</h3>
+                        <p>Basketball simulation game</p>
+                    </div>
+                    <div class="game-card">
+                        <img src="media/f1.jpg" alt="Formula 1">
+                        <h3>Formula 1 🏎️</h3>
+                        <p>Racing simulation game</p>
+                    </div>
+                </div>
+
+                <h2>Sports Fanatic 🏆</h2>
+                <p>I love watching and following various sports:</p>
+                <div class="sports-content">
+                    <div class="sport-item">
+                        <h3>Basketball 🏀</h3>
+                        <p>Following NBA games and players</p>
+                    </div>
+                    <div class="sport-item">
+                        <h3>Soccer ⚽</h3>
+                        <p>Watching Premier League and UEFA matches</p>
+                    </div>
+                </div>
+
+                <h2>Music 🎵</h2>
+                <p>Music is a huge part of my life. Here are my favorite artists:</p>
+                
+                <div class="music-grid">
+                    <div class="artist-card">
+                        <img src="media/jayzmusic.jpg" alt="Jay-Z">
+                        <h3>Jay-Z 👑</h3>
+                        <audio controls>
+                            <source src="aud&vid/Jay-Z - Hate.mp3" type="audio/mpeg">
+                            Your browser does not support the audio element.
+                        </audio>
+                    </div>
+                    <div class="artist-card">
+                        <img src="media/kanyemusic.jpg" alt="Kanye West">
+                        <h3>Kanye West 🌊</h3>
+                        <audio controls>
+                            <source src="aud&vid/04 Kanye West - All Of The Lights (Interlude).mp3" type="audio/mpeg">
+                            Your browser does not support the audio element.
+                        </audio>
+                    </div>
+                    <div class="artist-card">
+                        <img src="media/cartimusic.jpg" alt="Playboi Carti">
+                        <h3>Playboi Carti 🎭</h3>
+                        <audio controls>
+                            <source src="aud&vid/Playboi Carti - JUMPIN.mp3" type="audio/mpeg">
+                            Your browser does not support the audio element.
+                        </audio> 
+                    </div>
+                    <div class="artist-card">
+                        <img src="media/drizzy.jpg" alt="Drake">
+                        <h3>Drake 🦉</h3>
+                        <audio controls>
+                            <source src="aud&vid/Drake - Papi s Home.mp3" type="audio/mpeg">
+                            Your browser does not support the audio element.
+                        </audio>
+                    </div>
+                </div>
+
+                <h2>Photography 📸</h2>
+                <p>I have a passion for photography, especially capturing urban landscapes and sports events.</p>
+                <div class="photography-cta">
+                    <a href="page2.html" class="cta-btn">See My Favorite Shots? →</a>
+                </div>
+            </section>
+            
+            
+        </main>
+
+        <footer>
+            <p>&copy; 2025 Emmanuel Hachindila - ⚡ HachiVerse ⚡</p>
+        </footer>
+    </div>
+
+    
+    <div class="logout-confirm">
+        <h3>🚪 Logout Confirmation</h3>
+        <p>Are you sure you want to logout?</p>
+        <div class="logout-confirm-buttons">
+            <button class="confirm-btn confirm-yes">Yes, Logout</button>
+            <button class="confirm-btn confirm-no">Cancel</button>
+        </div>
+    </div>
+
+    
+    <div class="error-popup">
+        <span class="error-message"></span>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>

@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="About Us">
+    <title>About Us ℹ️</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="icon" href="media/favicon.ico" type="image/x-icon">
+</head>
+<body>
+   
+    <aside class="sidebar">
+        <button class="sidebar-toggle" data-tooltip="Hide Sidebar">←</button>
+        <div class="logo">⚡ HachiVerse ⚡</div>
+        
+        <ul class="nav-menu">
+            <li><a href="home.html">🏠 <span>Home</span></a></li>
+            <li><a href="profile.html">👤 <span>Profile</span></a></li>
+            <li class="dropdown">
+                <a href="#">📊 <span>Academic Results</span></a>
+                <div class="dropdown-content">
+                    <a href="year1.html">Year 1 Results</a>
+                    <a href="year2.html">Year 2 Results</a>
+                    <a href="year3.html">Year 3 Results</a>
+                    <a href="year4.html">Year 4 Results</a>
+                </div>
+            </li>
+            <li><a href="page1.html">🎮 <span>My Hobbies</span></a></li>
+            <li><a href="page2.html">📸 <span>My Shots</span></a></li>
+            <li><a href="about.html" class="active">ℹ️ <span>About Us</span></a></li>
+        </ul>
+    </aside>
+
+   
+    <button class="show-sidebar-btn">☰</button>
+
+   
+    <div class="header-settings">
+        <button class="settings-btn">⚙️</button>
+        <div class="settings-dropdown">
+            <a href="#" id="lightModeToggle">☀️ Light Mode</a>
+            <a href="#" id="logoutBtn">🚪 Logout</a>
+        </div>
+    </div>
+
+   
+    <button class="menu-toggle">☰</button>
+    <div class="overlay"></div>
+
+  
+    <div class="container">
+        <main>
+            <section class="welcome-section">
+                <h1>About Us ℹ️</h1>
+                <p>Get in touch with me</p>
+            </section>
+
+            <section class="about-section">
+                <div class="contact-info">
+                    <h2>Contact Information 📞</h2>
+                    <div class="contact-card">
+                        <h3>Emmanuel Hachindila</h3>
+                        <p><strong>Email:</strong> ehachi10@gmail.com</p>
+                        <p><strong>Phone:</strong> +260 97 349 2985</p>
+                        <p><strong>Location:</strong> Lusaka, Zambia</p>
+                        <p><strong>University:</strong> University of Lusaka (UNILUS)</p>
+                        <p><strong>Program:</strong> Bachelor of Information Technology</p>
+                        <p><strong>Year:</strong> 3rd Year</p>
+                    </div>
+
+                    <div class="social-links">
+                        <h3>Connect with me 🌐</h3>
+                        <div class="social-grid">
+                            <a href="https://www.instagram.com/emmanuel_hachi" class="social-link instagram">
+                                <span>Instagram 📷</span>
+                            </a>
+                            <a href="https://www.youtube.com/@h.manuelll" class="social-link youtube">
+                                <span>YouTube 📺</span>
+                            </a>
+                            <a href="https://www.linkedin.com/in/emmanuelhachindila" class="social-link linkedin">
+                                <span>LinkedIn 💼</span>
+                            </a>
+                            <a href="https://github.com/emmanuelhachi" class="social-link github">
+                                <span>GitHub 💻</span>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="about-content">
+                    <h2>About This Website ℹ️</h2>
+                    <p>This portfolio website was created as part of the BIT315 Web Development assignment for the University of Lusaka. It showcases my academic journey, personal interests, and technical skills in web development.</p>
+                    
+                    <h3>Technical Features 🔧</h3>
+                    <ul>
+                        <li>Responsive design that works on all devices</li>
+                        <li>Neon green and grey color scheme</li>
+                        <li>Interactive image slideshows with fade effects</li>
+                        <li>Light/dark mode toggle</li>
+                        <li>Form validation and user authentication</li>
+                        <li>Dynamic content loading</li>
+                    </ul>
+
+                    <h3>Technologies Used 💻</h3>
+                    <div class="tech-stack">
+                        <span class="tech-tag">HTML</span>
+                        <span class="tech-tag">CSS</span>
+                        <span class="tech-tag">JavaScript</span>
+                        <span class="tech-tag">Responsive Design</span>
+                    </div>
+                </div>
+            </section>
+            
+           
+        </main>
+
+        <footer>
+            <p>&copy; 2025 Emmanuel Hachindila - ⚡ HachiVerse ⚡</p>
+        </footer>
+    </div>
+
+    
+    <div class="logout-confirm">
+        <h3>🚪 Logout Confirmation</h3>
+        <p>Are you sure you want to logout?</p>
+        <div class="logout-confirm-buttons">
+            <button class="confirm-btn confirm-yes">Yes, Logout</button>
+            <button class="confirm-btn confirm-no">Cancel</button>
+        </div>
+    </div>
+
+    
+    <div class="error-popup">
+        <span class="error-message"></span>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>

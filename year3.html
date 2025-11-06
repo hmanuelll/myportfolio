@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Year 3 Results">
+    <title>Year 3 Results 📊</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="icon" href="media/favicon.ico" type="image/x-icon">
+</head>
+<body>
+    <!-- Sidebar Navigation -->
+    <aside class="sidebar">
+        <button class="sidebar-toggle" data-tooltip="Hide Sidebar">←</button>
+        <div class="logo">⚡ HachiVerse ⚡</div>
+        
+        <ul class="nav-menu">
+            <li><a href="home.html">🏠 <span>Home</span></a></li>
+            <li><a href="profile.html">👤 <span>Profile</span></a></li>
+            <li class="dropdown">
+                <a href="#" class="active">📊 <span>Academic Results</span></a>
+                <div class="dropdown-content">
+                    <a href="year1.html">Year 1 Results</a>
+                    <a href="year2.html">Year 2 Results</a>
+                    <a href="year3.html" class="active">Year 3 Results</a>
+                    <a href="year4.html">Year 4 Results</a>
+                </div>
+            </li>
+            <li><a href="page1.html">🎮 <span>My Hobbies</span></a></li>
+            <li><a href="page2.html">📸 <span>My Shots</span></a></li>
+            <li><a href="about.html">ℹ️ <span>About Us</span></a></li>
+        </ul>
+    </aside>
+
+   
+    <button class="show-sidebar-btn">☰</button>
+
+    
+    <div class="header-settings">
+        <button class="settings-btn">⚙️</button>
+        <div class="settings-dropdown">
+            <a href="#" id="lightModeToggle">☀️ Light Mode</a>
+            <a href="#" id="logoutBtn">🚪 Logout</a>
+        </div>
+    </div>
+
+    
+    <button class="menu-toggle">☰</button>
+    <div class="overlay"></div>
+
+  
+    <div class="container">
+        <main>
+            <section class="welcome-section">
+                <h1>Year 3 Academic Results 📈</h1>
+                <p>Third Year Performance - Specialization Phase</p>
+            </section>
+
+            <section>
+                <table>
+                    <thead>
+                        <tr>
+                            <th>Course Name</th>
+                            <th>Marks</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>Advanced Web Development</td>
+                            <td>92</td>
+                        </tr>
+                        <tr>
+                            <td>Advanced Java</td>
+                            <td>85</td>
+                        </tr>
+                        <tr>
+                            <td>Software Engineering</td>
+                            <td>88</td>
+                        </tr>
+                        <tr>
+                            <td>Mobile Application Development</td>
+                            <td>94</td>
+                        </tr>
+                        <tr>
+                            <td>Big Data</td>
+                            <td>91</td>
+                        </tr>
+                        <tr>
+                            <td>Database Management Systems</td>
+                            <td>95</td>
+                        </tr>
+                        <tr>
+                            <td>Networking</td>
+                            <td>87</td>
+                        </tr>
+                    </tbody>
+                </table>
+
+                <div class="summary-box">
+                    <h3>Year 3 Summary 📊</h3>
+                    <p><strong>Average Mark:</strong> 90.3%</p>
+                    <p><strong>Status:</strong> Outstanding Performance</p>
+                    <p><strong>GPA:</strong> 4.0/4.0</p>
+                </div>
+
+                <div class="nav-buttons">
+                    <a href="year2.html" class="nav-btn">← Previous Year</a>
+                    <a href="home.html" class="nav-btn nav-btn-center">Back to Home</a>
+                    <a href="year4.html" class="nav-btn">Next Year →</a>
+                </div>
+            </section>
+        </main>
+
+        <footer>
+            <p>&copy; 2025 Emmanuel Hachindila - ⚡ HachiVerse ⚡</p>
+        </footer>
+    </div>
+
+  
+    <div class="logout-confirm">
+        <h3>🚪 Logout Confirmation</h3>
+        <p>Are you sure you want to logout?</p>
+        <div class="logout-confirm-buttons">
+            <button class="confirm-btn confirm-yes">Yes, Logout</button>
+            <button class="confirm-btn confirm-no">Cancel</button>
+        </div>
+    </div>
+
+    
+    <div class="error-popup">
+        <span class="error-message"></span>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
